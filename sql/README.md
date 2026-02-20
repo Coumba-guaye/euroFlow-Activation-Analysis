@@ -1,5 +1,11 @@
 # NeuroFlow AI — Analyse Activation & Conversion Produit
 
+## 📈 Impact Business
+
+Simulation :  
+Une augmentation du taux d’activation de 35 % à 45 % pourrait générer une hausse significative du chiffre d’affaires mensuel récurrent (MRR).
+
+L’activation représente le levier stratégique prioritaire.
 ## Objectif
 
 Analyser le parcours utilisateur d’une plateforme SaaS B2B afin d’identifier les leviers d’amélioration de la conversion (gratuit → payant).
