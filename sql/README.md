@@ -1,43 +1,62 @@
-## NeuroFlow AI — Product Activation & Conversion Analysis
+# NeuroFlow AI — Analyse Activation & Conversion Produit
 
-### Contexte
-NeuroFlow AI est une plateforme SaaS B2B basée sur l’IA. Malgré une acquisition correcte, la conversion vers les plans payants reste limitée.
+## Objectif
 
-Objectif : identifier où se situe la perte dans le parcours utilisateur (signup → activation → conversion payante) et proposer des leviers produit.
-
----
-
-### Stack
-- SQL (DuckDB) : extraction, jointures, KPI
-- Python (Pandas, Matplotlib) : Time to First Value & analyses comportementales
-- Tableau : dashboard exécutif (funnel, KPI, distribution)
+Analyser le parcours utilisateur d’une plateforme SaaS B2B afin d’identifier les leviers d’amélioration de la conversion (gratuit → payant).
 
 ---
 
-### Résultats clés
-- Conversion globale : **20,36 %**
-- Activation rate (first_value) : **34,76 %**
+## Problématique
+
+Malgré un bon volume d’inscriptions, le taux de conversion vers les plans payants reste limité.
+
+Questions clés :
+
+- Où se situe la perte principale dans le funnel ?
+- L’activation produit influence-t-elle la conversion ?
+- Le délai d’activation a-t-il un impact sur la performance business ?
+
+---
+
+## Stack Technique
+
+- **SQL (DuckDB)** : extraction, jointures, KPI, funnel
+- **Python (Pandas, Matplotlib)** : analyse comportementale (Time To First Value)
+- **Tableau** : dashboard exécutif et visualisation stratégique
+
+---
+
+## 📊 Résultats Clés
+
+- Taux de conversion global : **20,36 %**
+- Taux d’activation (first_value) : **34,76 %**
 - Conversion utilisateurs activés : **29,29 %**
 - Conversion utilisateurs non activés : **15,06 %**
-- Time to First Value moyen : **8,77 jours** (médiane : **9 jours**)
+- Time To First Value moyen : **8,77 jours**
+- Médiane : **9 jours**
+- 59 % des utilisateurs atteignent la valeur après 7 jours
 
 ---
 
-### Insight principal
-L’activation produit est le levier majeur de conversion : un utilisateur activé convertit ~2x plus.
-La priorité business est d’augmenter le taux d’activation et de réduire la friction pour atteindre la first value.
+## Insight Principal
+
+L’activation produit est le principal levier de conversion.
+
+Un utilisateur activé convertit presque **2 fois plus** qu’un utilisateur non activé.
+
+Le problème prioritaire n’est pas la vitesse d’activation, mais le fait que **65 % des utilisateurs n’atteignent jamais la first value**.
 
 ---
 
-### Recommandations
-- Simplifier l’onboarding et réduire le “time-to-value”
-- Nudges (emails/in-app) dans les 3 premiers jours
-- Mise en avant automatique des features clés
-- Parcours guidé selon le segment (freelancer / SMB / mid-market)
+## Recommandations Business
+
+- Simplifier l’onboarding
+- Réduire la friction d’accès aux fonctionnalités clés
+- Mettre en place des nudges dans les 3 premiers jours
+- Personnaliser le parcours selon le segment utilisateur
 
 ---
 
-### Contenu du repo
-- `sql/` : scripts d’import + KPI (conversion, activation, funnel, cohortes)
-- `python/` : notebook d’analyse Time to First Value
+## 📁 Structure du Projet
+
 - `dashboard/` : screenshot du dashboard Tableau (à ajouter)
